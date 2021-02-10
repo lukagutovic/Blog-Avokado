@@ -1,0 +1,35 @@
+.prefooter {
+    background: #6b6d70;
+    height: 120px;
+
+    .main-box-7 {
+        background: #6b6d70;
+        height: 120px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        .logo {
+            width: 150px;
+            height: 110px;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .prefooter-text {
+            font-size: 20px;
+            margin-top: auto;
+            margin-bottom: auto;
+            padding-left: 60px;
+            max-width: 531px;
+            margin-right: 341px;
+
+            mark {
+                padding: 0;
+                background-color: #fbd9d6;
+                color: #6b6d70;
+            }
+        }
+    }
+
+}

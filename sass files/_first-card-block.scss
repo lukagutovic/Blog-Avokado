@@ -1,0 +1,159 @@
+@mixin images-props {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin flex-props {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+@mixin button {
+    width: 100%;
+    background: #d4364f;
+    border: 0;
+    border-radius: 2px;
+    font-size: 23px;
+    padding: 12px 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+@mixin card-wrap-pros {
+    flex: 0 0 47%;
+    margin-right: 30px;
+}
+
+
+
+.first-bar {
+    @include flex-props();
+    margin-top: 30px;
+
+    .card-wrapper-1 {
+        @include card-wrap-pros();
+
+        .img-wrapp {
+            background: url('./images/auto-img-01.png');
+            @include images-props();
+            height: 260px;
+            position: relative;
+
+            .top-text {
+                @include flex-props();
+
+                .date {
+                    position: absolute;
+                    top: 10px;
+                    left: 30px;
+                    color: #fff;
+                    font-size: 20px;
+                }
+
+                .by-mdauto {
+                    position: absolute;
+                    right: 155px;
+                    top: 10px;
+                    font-size: 20px;
+                    color: #fff;
+
+                    mark {
+                        color: #d4364f;
+                        background-color: #fbd9d6;
+                    }
+                }
+            }
+
+            .lead-text {
+                position: absolute;
+                bottom: -20px;
+                left: 30px;
+                font-size: 30px;
+                color: #fff;
+            }
+        }
+
+        .card-text {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-size: 18px;
+            line-height: 24px;
+
+            mark {
+                background-color: #fbd9d6;
+            }
+        }
+
+        button {
+            @include button();
+
+            &:hover {
+                background: #eef3f6;
+                color: #393b3f;
+            }
+        }
+    }
+
+    .card-wrapper-2 {
+        @include card-wrap-pros();
+
+        .img-wrapp {
+            background: url('./images/servis-img-01.png');
+            @include images-props();
+            height: 260px;
+            position: relative;
+
+            .top-text {
+                @include flex-props();
+
+                .date {
+                    position: absolute;
+                    top: 10px;
+                    left: 30px;
+                    color: #fff;
+                    font-size: 20px;
+                }
+
+                .by-mdauto {
+                    position: absolute;
+                    right: 155px;
+                    top: 10px;
+                    font-size: 20px;
+                    color: #fff;
+
+                    mark {
+                        color: #d4364f;
+                        background-color: #fbd9d6;
+                    }
+                }
+            }
+
+            .lead-text {
+                position: absolute;
+                bottom: -20px;
+                left: 30px;
+                font-size: 30px;
+                color: #fff;
+            }
+        }
+
+        .card-text {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-size: 18px;
+            line-height: 24px;
+
+            mark {
+                background-color: #fbd9d6;
+
+            }
+        }
+
+        button {
+            @include button();
+        }
+    }
+}

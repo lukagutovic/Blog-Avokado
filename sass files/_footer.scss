@@ -1,0 +1,71 @@
+footer {
+    background: #393b3f;
+    padding: 50px 0 10px 0;
+
+    .footer-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        .o-nama-wrap {
+            width: 32%;
+
+            h5 {
+                font-size: 16px;
+            }
+
+            span {
+                color: #868686;
+            }
+        }
+
+        .prodajna-mesta-wrap,
+        .e-prodavnica-wrap,
+        .podrska-wrap,
+        .meni-wrap {
+            width: 14%;
+            margin-left: 30px;
+        }
+
+        h5 {
+            font-size: 16px;
+            text-transform: uppercase;
+            padding-bottom: 10px;
+            color: #868686;
+        }
+
+        p,
+        li {
+            font-size: 13px;
+        }
+
+        .prodajna-mesta-wrap span {
+            background: #868686;
+            color: #fff;
+            padding-left: 5px;
+            padding-right: 15px;
+            padding-bottom: 2px;
+            border-radius: 5px;
+        }
+
+        .podrska-wrap .lightblue-text {
+            background-color: #fbd9d6;
+            padding: 0;
+            color: #3bbba5;
+        }
+    }
+
+    p {
+        color: #fff;
+    }
+
+    mark {
+        background-color: #fbd9d6;
+        padding: 0;
+    }
+
+    .copyright {
+        font-size: 10px;
+        color: #8b8789;
+    }
+}

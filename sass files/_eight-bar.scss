@@ -1,0 +1,79 @@
+@mixin images-props {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin flex-props {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+@mixin button {
+    width: 100%;
+    background: #d4364f;
+    border: 0;
+    border-radius: 2px;
+    font-size: 23px;
+    padding: 12px 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+@mixin card-wrap-pros {
+    flex: 0 0 47%;
+    margin-right: 30px;
+}
+
+
+.eight-bar {
+    position: relative;
+
+    img {
+        position: absolute;
+        top: 79px;
+        left: 30px;
+        width: 125px;
+    }
+
+    .banner-wrap {
+        background: url('./images/baner.png');
+        @include images-props();
+        margin-right: 30px;
+
+        .lead-text {
+            padding-top: 200px;
+            padding-left: 50px;
+            font-size: 30px;
+            max-width: 460px;
+
+            mark {
+                color: #fff;
+                padding: 0;
+                background-color: rgba(255, 255, 255, 0.74);
+            }
+        }
+
+        .shop-text {
+            padding-left: 50px;
+            padding-bottom: 30px;
+            margin-bottom: 55px;
+
+            .fa-shopping-cart {
+                color: #f58b44;
+                margin-right: 10px;
+            }
+
+            mark {
+                color: #f58b44;
+                padding: 0;
+                background-color: rgba(255, 255, 255, 0.74);
+            }
+        }
+    }
+}
+
+
+// osma kartica kraj

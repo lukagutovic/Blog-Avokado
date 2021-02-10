@@ -1,0 +1,39 @@
+.aside {
+    .first-bar {
+        background: url('./images/potreban-deo-img.png');
+        @include images-props();
+        height: 350px;
+        margin-top: 30px;
+
+        .first-bar-text {
+            .lead-text {
+                font-size: 30px;
+                color: #fff;
+                padding: 10px 30px 0;
+                max-width: 270px;
+                line-height: 38px;
+
+                mark {
+                    color: #d4364f;
+                    background-color: #fbd9d6;
+                }
+
+            }
+
+            .shop-text {
+                padding: 0px 30px;
+                margin-top: -10px;
+
+                mark {
+                    color: #d4364f;
+                    background-color: #fbd9d6;
+                }
+
+                .fa-shopping-cart {
+                    color: #f58b44;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

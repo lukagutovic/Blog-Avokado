@@ -1,0 +1,54 @@
+.seventh-bar {
+    .page-number {
+        max-width: 100%;
+        margin-top: 20px;
+
+        .numbers-wrap {
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+
+            .num {
+                mark {
+                    color: #8b8789;
+                    background-color: #fbd9d6;
+                }
+            }
+
+            .less-sign {
+                cursor: pointer;
+
+                &:hover {
+                    color: #d4364f;
+                }
+            }
+
+            .bigger-sign {
+                color: #8b8789;
+            }
+
+            .single-num {
+                color: #d4364f;
+            }
+
+            .more-space {
+                cursor: pointer;
+
+                &:hover {
+                    color: #d4364f;
+                }
+            }
+
+            p {
+                padding: 10px;
+                font-size: 20px;
+            }
+
+            .more-space {
+                padding-left: 20px;
+            }
+        }
+    }
+}
